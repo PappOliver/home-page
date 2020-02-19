@@ -1,4 +1,6 @@
+<!--Getting resources from Geoplugin--> 
 <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+<!--Convert IP to country code and redirect to index.html in the proper folder-->
 <script language="JavaScript">
     if(geoplugin_countryCode() == 'HU') {
         lang = 'hu';
@@ -8,3 +10,5 @@
     }
     window.location.replace('http://www.pappoliver.me/' + lang);
 </script>
+<!--If JavaScript engine is disabled run this-->
+<noscript><meta http-equiv="refresh" content="0;url=/hu/index.html"></noscript>
