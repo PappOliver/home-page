@@ -35,9 +35,9 @@ nav h1 {
     margin: 2.5vh 0
 }
 nav ul {
-    background-color: #000;
     float: left;
     width: 60%;
+    height: 100%;
     margin: 3vh 0
 }
 nav ul li {
