@@ -12,12 +12,12 @@ a {
 }
 /* Navigation */
 nav {
-    background-color: #6B7EFA;
+    background-color: #4073DE;
     color: #FCFDFF;
     width: 100%;
     height: 10vh;
     border-bottom: 1px solid #D3DBE6;
-    box-shadow: 0 1px 2px #D3DBE6
+    box-shadow: 0 2px 3px #D3DBE6
 }
 nav img {
     float: left;
@@ -36,16 +36,27 @@ nav h1 {
 }
 nav ul {
     float: left;
-    width: 60%;
+    width: 50%;
     height: 100%;
-    margin: 3vh 0
+    font-size: 4vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: calc(30% - 50px)
 }
 nav ul li {
+    display: inline-block
+}
+nav ul li::after {
     display: inline-block;
-    font-size: 4vh;
+    content: '\007C';
+    padding: 0 1vw
+}
+nav ul li.last-item::after {
+    content: ''
 }
 .select-language {
     float: right;
+    width: 10vw;
     height: 100%
 }
 .select-language a {
