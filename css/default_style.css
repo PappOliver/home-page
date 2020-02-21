@@ -1,7 +1,61 @@
+/* General */
 * {
     box-sizing: border-box
 }
 body {
+    background-color: #FCFDFF;
+    font-family: 'PT Sans'
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/* Navigation */
+nav {
+    background-color: #6B7EFA;
+    color: #FCFDFF;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid #D3DBE6;
+    box-shadow: 0 1px 2px #D3DBE6
+}
+nav img {
+    float: left;
+    height: 8vh;
+    margin: 1vh 2vw;
+    filter: grayscale(50%)
+}
+nav img:hover {
+    filter: grayscale(0%)
+}
+nav h1 {
+    float: left;
+    font-family: 'Coming Soon';
+    font-size: 5vh;
+    margin: 2.5vh 0
+}
+nav ul {
     background-color: #000;
-    width: 100%
+    float: left;
+    width: 60%;
+    margin: 3vh 0
+}
+nav ul li {
+    display: inline-block;
+    font-size: 4vh;
+}
+.select-language {
+    float: right;
+    height: 100%
+}
+.select-language a {
+    display: block;
+    font-size: 3vh;
+    margin: 3.5vh 2vw
+}
+/* Header */
+header {
+    position: relative;
+    width: 100%;
+    height: 90vh
 }
