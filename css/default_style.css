@@ -7,66 +7,116 @@ body {
     font-family: 'PT Sans'
 }
 a {
-    color: #FFFFFF;
+    color: #FCFDFF;
     text-decoration: none;
+}
+.left {
+    float: left
+}
+.right {
+    float: right
 }
 /* Navigation */
 nav {
-    background-color: #4073DE;
-    color: #FCFDFF;
     width: 100%;
-    height: 10vh;
-    border-bottom: 1px solid #D3DBE6;
-    box-shadow: 0 2px 3px #D3DBE6
+    height: 70px;
+    border-bottom: 1px solid #2753A1;
+    box-shadow: 0 2px 3px #97A8C7;
+    overflow: hidden
 }
 nav img {
-    float: left;
-    height: 8vh;
-    margin: 1vh 2vw;
-    filter: grayscale(50%)
-}
-nav img:hover {
-    filter: grayscale(0%)
+    height: 48px;
+    margin: 11px 12px 11px 5%
 }
 nav h1 {
-    float: left;
     font-family: 'Coming Soon';
-    font-size: 5vh;
-    margin: 2.5vh 0
+    font-size: 26px;
+    margin: 22px 0;
+    cursor: default
 }
 nav ul {
-    float: left;
-    width: 50%;
-    height: 100%;
-    font-size: 4vh;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    margin-left: calc(30% - 50px)
+    margin: 18px 0
 }
 nav ul li {
-    display: inline-block
+    display: inline-block;
+    font-size: 24px
 }
 nav ul li::after {
     display: inline-block;
-    content: '\007C';
-    padding: 0 1vw
+    content: '';
+    background-color: #2753A1;
+    width: 1px;
+    height: 35px
+
 }
 nav ul li.last-item::after {
-    content: ''
+    display: none
 }
 .select-language {
-    float: right;
-    width: 10vw;
-    height: 100%
-}
-.select-language a {
-    display: block;
-    font-size: 3vh;
-    margin: 3.5vh 2vw
+    font-size: 20px;
+    margin: 25px 5%
 }
 /* Header */
 header {
-    position: relative;
     width: 100%;
-    height: 90vh
+    height: calc(100vh - 70px)
+}
+/* Footer */
+footer {
+    display: table;
+    width: 100%;
+    height: 250px;
+    border-top: 1px solid #2753A1;
+    box-shadow: 0 -2px 3px #97A8C7;
+    overflow: hidden
+}
+footer h2 {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 125px;
+    text-align: center;
+    font-size: 28px;
+    padding: 48.5px 0
+}
+footer h2.first {
+    background-color: rgba(0, 0, 0, .1);
+}
+footer h2.second {
+    background-color: rgba(0, 0, 0, .2);
+}
+footer h2.third {
+    background-color: rgba(0, 0, 0, .3);
+}
+footer h2.fourth {
+    background-color: rgba(0, 0, 0, .4);
+}
+footer h2.first::after {
+    z-index: 1;
+    content: '\2192';
+    position: absolute;
+    right: -1.5rem;
+    top: calc(50% - 1.5rem);
+    font-size: 3rem
+}
+footer h2.second::after {
+    z-index: 1;
+    display: block;
+    content: '\2193';
+    position: absolute;
+    bottom: -1.5rem;
+    right: calc(50% - 1.5rem);
+    font-size: 3rem
+}
+footer h2.third::after {
+    z-index: 1;
+    content: '\2190';
+    position: absolute;
+    left: -1.5rem;
+    top: calc(50% - 1.5rem);
+    font-size: 3rem
+}
+nav, footer {
+    background-color: #285CBD;
+    color: #FCFDFF;
 }
