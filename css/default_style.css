@@ -3,6 +3,7 @@
     box-sizing: border-box
 }
 body {
+    display: flex;
     font-family: 'Raleway';
     font-size: 14px;
     color: #111
