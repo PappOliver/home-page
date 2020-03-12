@@ -12,7 +12,6 @@ body {
     font-family: 'Raleway';
     font-size: 16px;
     color: rgba(0,0,0,.9);
-    overflow: hidden;
 }
 .topbar, .intro, footer, ::-webkit-scrollbar-track {
     background-color: rgba(255,255,255,.8);
@@ -23,7 +22,7 @@ a {
     transition: .1s;
 }
 /* Header */
-#header {
+.header {
     display: flex;
     flex-direction: column;
     width: 100%;
