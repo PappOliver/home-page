@@ -22,7 +22,7 @@ a {
     transition: .1s;
 }
 /* Header */
-.header {
+#header {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -167,7 +167,7 @@ footer {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .6);
     width: 50px;
     height: 50px;
-    cursor: pointer
+    cursor: pointer;
 }
 #buttonTop img {
     position: relative;
