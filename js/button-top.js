@@ -1,5 +1,5 @@
-var buttonTop = document.getElementById('buttonTop');
-var header = document.getElementById('header');
+const buttonTop = document.getElementById('buttonTop');
+const header = document.getElementById('header');
 
 // When the user left behind the .header, show the button.
 window.onscroll = function() {scrollFunction()};
