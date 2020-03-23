@@ -1,14 +1,43 @@
-<!-- Getting resources from Geoplugin.net by free license (max. 120 request per minute) --> 
-<script language="JavaScript" type="text/javascript" src="http://www.geoplugin.net/javascript.gp"></script>
-<!-- Convert IP to country code and redirect into the proper folder of index.html -->
-<script language="JavaScript" type="text/javascript">
-    if(geoplugin_countryCode() === 'HU') {
-        lang = 'hu';
-    }
-    else {
-        lang = 'en';
-    }
-    window.location.replace('http://www.pappoliver.me/' + lang);
-</script>
-<!-- If JavaScript engine is disabled run this code and use /hu folder as default -->
-<noscript><meta http-equiv="refresh" content="0;url=/hu"></noscript>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weboldalak készítésével foglalkozom. A szerver oldal által megjelenített tartalom gyártása a fő profilom, amivel a felhasználó érintkezik, interakcióba lép. HTML, CSS, JavaScript tudásomat autodidakta módon sajátítottam el, valamint egy online kurzus segítségével.">
+    <title>Papp Olivér - Front-End Fejlesztés | Weboldal Készítés</title>
+    <link rel="icon" href="../favicon.png" type="image/png" sizes="400x400">
+    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300|PT+Sans&display=swap">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            background: url('img/maintenance-bg.jpg') no-repeat center center;
+            background-size: cover;
+            color: rgba(255,255,255,.8);
+            width: 100vw;
+            min-height: 100vh;
+        }
+        body > * {
+            margin: 10px auto;
+            padding: 10px;
+        }
+        h1 {
+            font-size: 300%;
+        }
+        h2 {
+            font-size: 150%;
+        }
+        p {
+            font-size: 125%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Karbantartás alatt!</h1>
+    <h2>(Under maintenance!)</h2>
+    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="papp-oliver188"><a class="LI-simple-link" href='https://hu.linkedin.com/in/papp-oliver188?trk=profile-badge'>Oliver Papp</a></div>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+</body>
+</html>
